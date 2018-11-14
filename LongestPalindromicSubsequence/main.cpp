@@ -17,6 +17,7 @@ int longestPalindromeSubseq(string &s) {
         return 0;
     }
     int dp[length][length];
+    memset(dp, 0, sizeof(dp));
     for (int i = length - 1; i >= 0; -- i) {
         dp[i][i] = 1;
         for (int j = i + 1; j < length; ++ j) {
