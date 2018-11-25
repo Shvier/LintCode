@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C0041107219F00FC00BB2D80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0041106219F00FC00BB2D80 /* main.cpp */; };
 		C0041112219F0B1100BB2D80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0041111219F0B1100BB2D80 /* main.cpp */; };
+		C00DFCA221AACF3200E21FAF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C00DFCA121AACF3200E21FAF /* main.cpp */; };
 		C0162B112195B95B00B5B0D1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0162B102195B95B00B5B0D1 /* main.cpp */; };
 		C054C0522196F933000D450A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C054C0512196F933000D450A /* main.cpp */; };
 		C054C05D2196FF38000D450A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C054C05C2196FF38000D450A /* main.cpp */; };
@@ -31,6 +32,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		C004110D219F0B1100BB2D80 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C00DFC9D21AACF3200E21FAF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -127,6 +137,8 @@
 		C0041106219F00FC00BB2D80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C004110F219F0B1100BB2D80 /* MiddleofLinkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MiddleofLinkedList; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0041111219F0B1100BB2D80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C00DFC9F21AACF3200E21FAF /* RainBowSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RainBowSort; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00DFCA121AACF3200E21FAF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C0162B0D2195B95B00B5B0D1 /* LintCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LintCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0162B102195B95B00B5B0D1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C054C04F2196F933000D450A /* KMP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KMP; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +168,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C004110C219F0B1100BB2D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00DFC9C21AACF3200E21FAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,6 +263,14 @@
 			path = MiddleofLinkedList;
 			sourceTree = "<group>";
 		};
+		C00DFCA021AACF3200E21FAF /* RainBowSort */ = {
+			isa = PBXGroup;
+			children = (
+				C00DFCA121AACF3200E21FAF /* main.cpp */,
+			);
+			path = RainBowSort;
+			sourceTree = "<group>";
+		};
 		C0162B042195B95B00B5B0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +285,7 @@
 				C0FEA52921A16E9A0071A686 /* MaximumNumberinMountainSequence */,
 				C0FEA53421A1710A0071A686 /* FindKClosestElements */,
 				C0FDB22321A45D6F0083FD61 /* FastPower */,
+				C00DFCA021AACF3200E21FAF /* RainBowSort */,
 				C0162B0E2195B95B00B5B0D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -276,6 +304,7 @@
 				C0FEA52821A16E9A0071A686 /* MaximumNumberinMountainSequence */,
 				C0FEA53321A1710A0071A686 /* FindKClosestElements */,
 				C0FDB22221A45D6F0083FD61 /* FastPower */,
+				C00DFC9F21AACF3200E21FAF /* RainBowSort */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,6 +416,23 @@
 			name = MiddleofLinkedList;
 			productName = MiddleofLinkedList;
 			productReference = C004110F219F0B1100BB2D80 /* MiddleofLinkedList */;
+			productType = "com.apple.product-type.tool";
+		};
+		C00DFC9E21AACF3200E21FAF /* RainBowSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00DFCA521AACF3200E21FAF /* Build configuration list for PBXNativeTarget "RainBowSort" */;
+			buildPhases = (
+				C00DFC9B21AACF3200E21FAF /* Sources */,
+				C00DFC9C21AACF3200E21FAF /* Frameworks */,
+				C00DFC9D21AACF3200E21FAF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainBowSort;
+			productName = RainBowSort;
+			productReference = C00DFC9F21AACF3200E21FAF /* RainBowSort */;
 			productType = "com.apple.product-type.tool";
 		};
 		C0162B0C2195B95B00B5B0D1 /* LintCode */ = {
@@ -557,6 +603,9 @@
 					C004110E219F0B1100BB2D80 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					C00DFC9E21AACF3200E21FAF = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					C0162B0C2195B95B00B5B0D1 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -609,6 +658,7 @@
 				C0FEA52721A16E9A0071A686 /* MaximumNumberinMountainSequence */,
 				C0FEA53221A1710A0071A686 /* FindKClosestElements */,
 				C0FDB22121A45D6F0083FD61 /* FastPower */,
+				C00DFC9E21AACF3200E21FAF /* RainBowSort */,
 			);
 		};
 /* End PBXProject section */
@@ -627,6 +677,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0041112219F0B1100BB2D80 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00DFC9B21AACF3200E21FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00DFCA221AACF3200E21FAF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +791,24 @@
 			name = Debug;
 		};
 		C0041115219F0B1100BB2D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQVA73S8GZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C00DFCA321AACF3200E21FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQVA73S8GZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C00DFCA421AACF3200E21FAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1031,6 +1107,15 @@
 			buildConfigurations = (
 				C0041114219F0B1100BB2D80 /* Debug */,
 				C0041115219F0B1100BB2D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00DFCA521AACF3200E21FAF /* Build configuration list for PBXNativeTarget "RainBowSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00DFCA321AACF3200E21FAF /* Debug */,
+				C00DFCA421AACF3200E21FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
